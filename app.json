@@ -1,7 +1,7 @@
 
 {
 
-    "name": "MRKARAD",
+    "name": "MRKARAD45",
 
     "description": "A Modular telegram bot.",
 
@@ -28,20 +28,19 @@
     ],
 
     "env": {
-
-        "BOT_TOKEN": {"6516199979:AAF0x1iC-JzZhoqx7IErFICjPVEj5JDQQeQ"}
+        "BOT_TOKEN": {
 
             "description": "Your Bot token from @Botfather"
 
         },
 
-        "API_ID": {"21659643"
+        "API_ID": {
 
             "description": "Your API_ID from https://my.telegram.org/apps"
 
         },
 
-        "API_HASH": {"c5f065905ef47e693b47e0f60bb67217"
+        "API_HASH": {
 
             "description": "Your API_HASH from https://my.telegram.org/apps"
 
