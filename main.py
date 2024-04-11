@@ -35,11 +35,11 @@ async def account_login(bot: Client, m: Message):
 
 @bot.on_message(filters.command("stop") & filters.user(ADMINS))
 async def restart_handler(_, m):
-    await m.reply_text("**STOPPED**🛑🛑", True)
+    await m.reply_text("STOP🛑", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
-@bot.on_message(filters.command(["BOSS"]) & filters.user(ADMINS))
+@bot.on_message(filters.command(["boss"]) & filters.user(ADMINS))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text(f"**Hey [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nSend txt file**")
     input: Message = await bot.listen(editable.chat.id)
@@ -78,7 +78,7 @@ async def account_login(bot: Client, m: Message):
     raw_text = input0.text
     await input0.delete(True)
 
-    await editable.edit("**Enter Batch Name or send d for grabing from text filename.**")
+    await editable.edit("**Ente Batch Name.**")
     input1: Message = await bot.listen(editable.chat.id)
     raw_text0 = input1.text
     await input1.delete(True)
