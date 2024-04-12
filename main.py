@@ -30,7 +30,7 @@ bot = Client("bot",
 
 @bot.on_message(filters.command(["start"]) & filters.user(ADMINS))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text(f"LEECH BOT MADE BY GREEN HORN [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /GREENHORN")
+    editable = await m.reply_text(f"LEECH BOT MADE BY VICKY [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /GREENHORN")
 
 
 @bot.on_message(filters.command("stop") & filters.user(ADMINS))
