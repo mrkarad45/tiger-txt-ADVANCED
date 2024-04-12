@@ -1,6 +1,6 @@
 # txt uploader
 
-# Made By MRKARAD45
+# Made By VICKY
 
 
 ## DEPLOY TO HEROKU
